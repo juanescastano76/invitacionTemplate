@@ -1,0 +1,708 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* Fuentes */
+
+@font-face {
+  font-family: "CrimsonText";
+  src: url("/fonts/CrimsonText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonText";
+  src: url("/fonts/CrimsonText-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonText";
+  src: url("/fonts/CrimsonText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonText";
+  src: url("/fonts/CrimsonText-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonText";
+  src: url("/fonts/CrimsonText-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OldStandardTT";
+  src: url("/fonts/OldStandardTT-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OldStandardTT";
+  src: url("/fonts/OldStandardTT-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OldStandardTT";
+  src: url("/fonts/OldStandardTT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-invitacion {
+  font-family: "GreatVibes", cursive;
+}
+
+.font-old {
+  font-family: "OldStandardTT", serif;
+}
+
+.font-old-italic {
+  font-family: "OldStandardTT", serif;
+  font-style: italic;
+}
+
+.font-old-bold {
+  font-family: "OldStandardTT", serif;
+  font-weight: 700;
+}
+
+/* General (recomendada) */
+.font-crimson {
+  font-family: "CrimsonText", serif;
+}
+
+/* Regular */
+.font-crimson-regular {
+  font-family: "CrimsonText", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+.font-crimson-italic {
+  font-family: "CrimsonText", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold */
+.font-crimson-bold {
+  font-family: "CrimsonText", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+.font-crimson-bold-italic {
+  font-family: "CrimsonText", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* SemiBold Italic */
+
+.invitacion-borde {
+  position: relative;
+  background: #f6faff;
+  padding: 3.5rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.invitacion-borde::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 5px solid #d6b08c;
+  border-bottom: 5px solid #d6b08c; /* borde grueso dorado */
+  pointer-events: none;
+}
+
+.article-items {
+  background-color: #ecd4ee;
+  padding: 20px 10px;
+  border-radius: 12px;
+
+  max-width: 400px;
+
+  /* sombra elegante */
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.12),
+    0 10px 25px rgba(0, 0, 0, 0.08);
+  color: #3a2a2a;
+  border: 2px solid #d6b08c;
+  outline: 1px solid #ead4b8;
+  outline-offset: -6px;
+}
+
+.btn-invitacion {
+  background: linear-gradient(135deg, #d8a7d8, #c48cc4);
+  color: #4a1f4a;
+
+  font-family: "CrimsonText-Regular", serif;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+
+  padding: 12px 22px;
+  border-radius: 999px; /* súper elegante */
+  border: 1.5px solid #b07ab0;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-invitacion:hover {
+  background: linear-gradient(135deg, #e2b8e2, #cf9ccf);
+  transform: translateY(-1px);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.btn-invitacion:active {
+  transform: scale(0.97);
+}
+
+.btn-llegar {
+  letter-spacing: 0.08em;
+}
+.btn-llegar {
+  background: linear-gradient(135deg, #d8a7d8, #c48cc4);
+  color: #4a1f4a;
+  font-family: "CrimsonText", serif;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 1.5px solid #b07ab0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-llegar:hover {
+  transform: translateY(-1px);
+}
+
+.section-location {
+  background: #f4e8f5;
+  padding: 4rem 1rem;
+  border-top-left-radius: -2% 80px;
+  border-top-right-radius: 100% 80px;
+}
+
+/* =========================
+   SUGERENCIA DE REGALOS
+   ========================= */
+
+.section-gifts {
+  background: #b88bbf; /* lila principal */
+  color: #3b163f;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Parte superior */
+.gifts-top {
+  padding: 3.5rem 1.5rem 4rem;
+  position: relative;
+}
+
+/* Decoración floral arriba */
+.gifts-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/* Título */
+.gifts-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto */
+.gifts-text {
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto 2rem;
+}
+
+/* Ícono circular */
+.gifts-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #6f1d73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+}
+
+.gifts-icon span {
+  font-size: 2rem;
+  color: #6f1d73;
+}
+
+/* Texto destacado */
+.gifts-highlight {
+  font-family: "GreatVibes", cursive;
+  color: #ffffff;
+}
+
+/* Parte inferior curva */
+.gifts-bottom {
+  background: #ffffff;
+  padding: 3rem 1rem 2rem;
+  border-top-left-radius: 100% 120px;
+  border-top-right-radius: 100% 120px;
+}
+
+/* Texto final */
+.gifts-footer {
+  font-family: "CrimsonText", serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #b88bbf;
+}
+
+/* Contenedor del separador */
+.gift-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gift-image {
+  width: 100%;
+  height: 600px;
+
+  background-size: cover;
+  background-position: center;
+
+  /* SOLO ARRIBA REDONDO */
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+}
+
+/* Asistencia */
+
+.invite-section {
+  position: relative;
+  background: #b88bbf;
+  padding: 3rem 1.5rem 5rem;
+  text-align: center;
+
+  /* CURVA ABAJO */
+}
+.invite-title {
+  font-size: 2.4rem;
+
+  color: #6a1b7b;
+  margin-bottom: 1rem;
+}
+
+.invite-text {
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.invite-button {
+  background: #6a1b7b;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.8rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.invite-footer {
+  font-family: "Great Vibes", cursive;
+}
+
+/* footer */
+
+.footer-zone {
+  background: #b78bbe;
+}
