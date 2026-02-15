@@ -65,6 +65,7 @@ function Countdown() {
             <h4 className="font-old-italic text-sm">SEG</h4>
           </div>
         </div>
+        <h2 className="font-old text-xl tracking-wide">18 . 04 . 2026</h2>
       </section>
     </div>
   );

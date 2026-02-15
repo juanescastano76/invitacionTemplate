@@ -25,6 +25,8 @@ function Tips(props: Props) {
           La celebración comenzará puntualmentea las 7:00 P.M. Les pedimos que
           lleguen al menos 15 minutos antes para evitar interrupciones.
         </li>
+        <li>La duracion del evento sera de las 7:00pm a las 2:00am</li>
+
         <li>
           Les invitamos a compartir sus propias fotos en nuestro albúm
           compartido.

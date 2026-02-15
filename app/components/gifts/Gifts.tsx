@@ -23,7 +23,7 @@ function Gifts() {
       <div className="gift-image-wrapper">
         <div
           className="gift-image"
-          style={{ backgroundImage: "url('/gifts/img1.jpg')" }}
+          style={{ backgroundImage: "url('/gifts/img22.jpg')" }}
         />
       </div>
     </section>

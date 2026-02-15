@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import localFont from "next/font/local";
+import Opener from "./components/opener/Opener";
 
 const invitacionFont = localFont({
   src: [
@@ -26,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={invitacionFont.variable}>
-      <body className={``}>{children}</body>
+      <body className={``}>
+        <Opener />
+        {children}
+      </body>
     </html>
   );
 }
