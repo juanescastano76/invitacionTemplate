@@ -1,31 +1,18 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 
 export default function Opener() {
   const [open, setOpen] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  useEffect(() => {
-    const wasOpened = localStorage.getItem("invitation-opened");
-    if (wasOpened === "true") {
-      setOpen(true);
-
-      // Intentar reproducir si ya estaba abierta
-      setTimeout(() => {
-        audioRef.current?.play().catch(() => {});
-      }, 300);
-    }
-  }, []);
-
   const handleOpen = async () => {
     setOpen(true);
-    localStorage.setItem("invitation-opened", "true");
 
     try {
       await audioRef.current?.play();
     } catch (error) {
-      console.log("Autoplay bloqueado por el navegador");
+      console.log("El navegador bloqueó el audio");
     }
   };
 
@@ -53,7 +40,7 @@ export default function Opener() {
         </div>
       )}
 
-      {/* Audio SIEMPRE montado */}
+      {/* Audio siempre montado */}
       <audio ref={audioRef} loop preload="auto">
         <source src="/music/perfect.mp3" type="audio/mpeg" />
       </audio>

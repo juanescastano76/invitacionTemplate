@@ -19,7 +19,7 @@ function Dresscode(props: Props) {
         />
       </div>
 
-      <p className="font-old-bold text-xl">Formal</p>
+      <p className="font-old-bold text-xl">NEGRO Formal</p>
     </Card>
   );
 }
